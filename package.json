@@ -1,5 +1,5 @@
 {
-  "name": "git-auto-pull",
+  "name": "docker-git-auto-pull",
   "version": "1.0.0",
   "description": "Dockerised Nodejs git auto pull script.",
   "main": "index.js",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/johnnyhuy/git-auto-pull/issues"
   },
-  "homepage": "https://github.com/johnnyhuy/git-auto-pull#readme"
+  "homepage": "https://github.com/johnnyhuy/git-auto-pull#readme",
+  "devDependencies": {
+    "git-auto-pull": "^1.0.9"
+  }
 }

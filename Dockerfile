@@ -15,3 +15,6 @@ COPY . .
 
 # Ports
 EXPOSE 3000
+
+# Run server command
+# CMD ['node', 'server.js']
