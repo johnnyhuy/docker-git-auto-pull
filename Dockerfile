@@ -13,4 +13,5 @@ RUN npm install
 # Copy other files
 COPY . .
 
+# Ports
 EXPOSE 3000
