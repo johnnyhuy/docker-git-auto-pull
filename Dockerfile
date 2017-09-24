@@ -7,6 +7,15 @@ WORKDIR usr/src/app
 # Copy package json config
 COPY package.json .
 
+# Update existing packages
+RUN apk update && apk upgrade
+
+# Core utils
+RUN \
+    echo -e "\nInstalling Core utilities..." && \
+    apk add \
+        git
+
 # Install deps.
 RUN npm install
 
@@ -15,6 +24,3 @@ COPY . .
 
 # Ports
 EXPOSE 3000
-
-# Run server command
-# CMD ['node', 'server.js']
