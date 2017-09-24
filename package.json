@@ -1,0 +1,19 @@
+{
+  "name": "git-auto-pull",
+  "version": "1.0.0",
+  "description": "Dockerised Nodejs git auto pull script.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnyhuy/git-auto-pull.git"
+  },
+  "author": "JohnnyHuy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnnyhuy/git-auto-pull/issues"
+  },
+  "homepage": "https://github.com/johnnyhuy/git-auto-pull#readme"
+}
