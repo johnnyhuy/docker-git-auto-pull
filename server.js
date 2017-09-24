@@ -20,7 +20,7 @@ const cmds = ["git pull"].concat(process.argv.filter((arg, index) => { return in
 const execCmds = cmds.map((cmd) => {
 	return function(callback) {
 		exec(`cd ${absolutePath} && ${cmd}`, {maxBuffer: 1024 * 600}, (err, stdout, stderr) => {
-			if(err) return callback(err);
+			if (err) return callback(err);
 			callback(null, `--- ${cmd} ---:\n stdout: ${stdout} \n stderr: ${stderr}\n`);
 		});
 	};
@@ -30,7 +30,7 @@ const updateProject = function(callback) {
 	async.series(
 		execCmds
 	, function(err, results) {
-		if(err) return callback(err);
+		if (err) return callback(err);
 		return callback(null, results.join(""));
 	});
 };
@@ -53,4 +53,4 @@ http.createServer(function (req, res) {
 	});
 
 }).listen(3000);
-console.log("Git-auto-pull is running");
+console.log("ALERT: Git Auto Pull is currently running...");
