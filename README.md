@@ -26,3 +26,6 @@ services:
 ```
 docker-compose up -d git
 ```
+
+# Credits
+Full credits to [Keenpoint](https://github.com/Keenpoint) for the original auto git pull .js [script](https://github.com/Keenpoint/git-auto-pull). 
