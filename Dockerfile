@@ -8,7 +8,9 @@ WORKDIR usr/src/app
 COPY package.json .
 
 # Update existing packages
-RUN apk update && apk upgrade
+RUN \
+    echo -e "\nUpdating packages..." && \
+    apk update && apk upgrade
 
 # Core utils
 RUN \
@@ -17,7 +19,9 @@ RUN \
         git
 
 # Install deps.
-RUN npm install
+RUN \
+    echo -e "\nInstalling Node packages..." && \
+    npm install
 
 # Copy other files
 COPY . .
