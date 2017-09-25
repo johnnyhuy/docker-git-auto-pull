@@ -10,7 +10,7 @@ version: "3"
 services:
   git:
     command: [sh, -c, "node server.js proj"]
-    image: johnnyhuy/docker-git-auto-pull:latest
+    image: johnnyhuy/git-auto-pull:latest
     ports:
       - "3000:3000"
     restart: "no"
