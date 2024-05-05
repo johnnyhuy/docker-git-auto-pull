@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: docker-git-auto-pull
+  title: Docker Apache
+  description: Docker container running Apache web server
+  tags:
+    - apache
+    - docker
+spec:
+  type: library
+  lifecycle: experimental
+  owner: johnnyhuy
